@@ -34,39 +34,41 @@ export const FlightForm = () => {
     return (
         <>
             <form className="MyForm2" onSubmit={handleSubmit} >
+                <header>New Flight</header>
+                <br />
                 <label htmlFor="flightNum">Flight Number:</label>
                 <div>
-                    <input id="flightNum" type="text" placeholder="Flight Number" ref={flightNumRef} />
+                    <input id="flightNum" type="text" placeholder="Flight Number (6 Characters)" ref={flightNumRef} />
                 </div>
 
                 <label htmlFor="departDate">Departure Date:</label>
                 <div>
-                    <input id="departDate" type="text" placeholder="Departure Date" ref={departDateRef} />
+                    <input id="departDate" type="text" placeholder="Departure Date (yyyy-mm-dd)" ref={departDateRef} />
                 </div>
 
                 <label htmlFor="arriveDate">Arrival Date:</label>
                 <div>
-                    <input id="arriveDate" type="text" placeholder="Arrival Date" ref={arriveDateRef} />
+                    <input id="arriveDate" type="text" placeholder="Arrival Date (yyyy-mm-dd)" ref={arriveDateRef} />
                 </div>
 
                 <label htmlFor="departTime">Departure Time:</label>
                 <div>
-                    <input id="departTime" type="text" placeholder="Departure Time" ref={departTimeRef} />
+                    <input id="departTime" type="text" placeholder="Departure Time (hh:mm)" ref={departTimeRef} />
                 </div>
 
                 <label htmlFor="arriveTime">Arrival Time:</label>
                 <div>
-                    <input id="arriveTime" type="text" placeholder="Arrival Time" ref={arriveTimeRef} />
+                    <input id="arriveTime" type="text" placeholder="Arrival Time (hh:mm)" ref={arriveTimeRef} />
                 </div>
 
                 <label htmlFor="departAirport">Departure Airport:</label>
                 <div>
-                    <input id="departAirport" type="text" placeholder="Departure Airport" ref={departAirportRef} />
+                    <input id="departAirport" type="text" placeholder="Departure Airport (XXX)" ref={departAirportRef} />
                 </div>
 
                 <label htmlFor="arriveAirport">Arrival Airport:</label>
                 <div>
-                    <input id="arriveAirport" type="text" placeholder="Arrival Airport" ref={arriveAirportRef} />
+                    <input id="arriveAirport" type="text" placeholder="Arrival Airport (XXX)" ref={arriveAirportRef} />
                 </div>
 
                 <label htmlFor="numPass">Number of Passengers:</label>
