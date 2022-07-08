@@ -1,0 +1,109 @@
+body {
+  background-color: rgba(17,41,45);
+}
+
+.MyForm2{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.MyForm2 fieldset{
+	border: none;
+}
+.MyForm2 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.MyForm2 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.MyForm2 input[type="text"],
+.MyForm2 input[type="date"],
+.MyForm2 input[type="date"],
+.MyForm2 input[type="time"],
+.MyForm2 input[type="time"],
+.MyForm2 input[type="text"],
+.MyForm2 input[type="text"],
+.MyForm2 input[type="number"],
+.MyForm2 input[type="number"],
+.MyForm2 textarea,
+.MyForm2 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.MyForm2 input[type="text"]:focus,
+.MyForm2 input[type="date"]:focus,
+.MyForm2 input[type="date"]:focus,
+.MyForm2 input[type="time"]:focus,
+.MyForm2 input[type="time"]:focus,
+.MyForm2 input[type="text"]:focus,
+.MyForm2 input[type="text"]:focus,
+.MyForm2 input[type="number"]:focus,
+.MyForm2 input[type="number"]:focus,
+.MyForm2 textarea:focus,
+.MyForm2 select:focus{
+	background: #d2d9dd;
+}
+.MyForm2 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.MyForm2 .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.MyForm2 input[type="submit"],
+.MyForm2 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.MyForm2 input[type="submit"]:hover,
+.MyForm2 input[type="button"]:hover
+{
+	background: #109177;
+}
+
