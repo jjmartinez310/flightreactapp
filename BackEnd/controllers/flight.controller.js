@@ -1,5 +1,6 @@
 const Flight = require('../models/Flight.model');
 
+//Creates the flight to be stored in the database
 const createFlight = async({flightNum,departDate,arriveDate,departTime,arriveTime,departAirport,arriveAirport,numPass,passLimit}) => {
     try{
         const flight = new Flight({
@@ -23,11 +24,13 @@ const createFlight = async({flightNum,departDate,arriveDate,departTime,arriveTim
     }
 }
 
+//Returns all available flights in the database
 const findAllFlights = async (limit=0) => {
     const flights = await Flight.find();
     return flights;
 }
 
+//Finds a flight in the database based on its ID
 const findFlightById = async id => {
     try{
         const flight = await Flight.findById(id);
@@ -41,6 +44,7 @@ const findFlightById = async id => {
     }
 }
 
+//Allows the user to update a flight stored in the database
 const updateFlightById = async (id, updatedFlight) => {
     try{
         const flight = await Flight.findOneAndUpdate({flightNum: id}, updatedFlight, {new:true});
@@ -54,6 +58,8 @@ const updateFlightById = async (id, updatedFlight) => {
     }
 }
 
+
+//Allows the user to delete a flight stored in the database
 const deleteFlightById = async id => {
     try{
         const flight = await Flight.findByIdAndRemove(id, {});

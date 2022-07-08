@@ -3,7 +3,7 @@ import axios from 'axios';
 import './FlightForm.css';
 
 export const FlightForm = () => {
-
+    //Receive values from form
     const flightNumRef = useRef();
     const departDateRef= useRef();
     const arriveDateRef= useRef();
@@ -17,6 +17,7 @@ export const FlightForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
+            //Makes a post request to create the form based off the values
             await axios.post('http://localhost:8080/flights', 
                             { flightNum: flightNumRef.current.value, departDate: departDateRef.current.value,
                             arriveDate: arriveDateRef.current.value, departTime: departTimeRef.current.value,
@@ -29,6 +30,7 @@ export const FlightForm = () => {
         }
     }
 
+    //Form that allows the user to enter flight data
     return (
         <>
             <form className="MyForm2" onSubmit={handleSubmit} >

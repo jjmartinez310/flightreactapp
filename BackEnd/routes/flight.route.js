@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { createFlight, findFlightById, findAllFlights, updateFlightById, deleteFlightById } = require('../controllers/flight.controller');
-// A router functions the same as your standard app, but it's a subsection of your app
 
 // GET /movies
 router.get('/', async (req, res) => {
@@ -8,6 +7,7 @@ router.get('/', async (req, res) => {
     res.json(flights);
 });
 
+//Post to create the flight form
 router.post('/', async (req, res) => {
     try {
         const flightId = await createFlight(req.body);
@@ -17,6 +17,7 @@ router.post('/', async (req, res) => {
     }
 });
 
+//Get by ID for the flight form
 router.get('/:id', async (req, res) => {
     try {
         const flight = await findFlightById(req.params.id);
@@ -26,6 +27,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+//Update function for the flight form
 router.put('/change/:id', async (req, res) =>{
     try {
         const flight = await updateFlightById(req.params.id, req.body);
@@ -35,6 +37,7 @@ router.put('/change/:id', async (req, res) =>{
     }
 })
 
+//Delete function implemented on the flight tiles
 router.delete('/delete/:id', async (req, res) => {
     try {
         const flight = await deleteFlightById(req.params.id);

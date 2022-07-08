@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-// Custom components need to styled to be used as a function
+// Style components to use them as a function
 export const NavLink = styled(Link)`
     color: inherit; /* Use the color that the parent element is using */
     text-decoration: none;

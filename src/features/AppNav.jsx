@@ -3,7 +3,7 @@ import  ThemeContext from '../contexts/ThemeContext';
 import { Nav, NavItem, NavLink, NavSection} from '../components/Nav';
 
 
-// This is an opinionated NavBar
+//NavBar to be able to navigate around the various pages
 export const AppNav = () => {
     const theme = useContext(ThemeContext);
     return (
