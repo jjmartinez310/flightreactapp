@@ -5,7 +5,7 @@ const flightSchema = new mongoose.Schema({
     flightNum: {
         required: true,
         type: String,
-        match: [/^[a-zA-Z0-9]{6}/i, "Please use a valid flight number"]
+        match: [/^[a-zA-Z0-9]{6}$/, "Please use a valid 6 digit flight number"]
     },
     departDate: {
         required: true,
